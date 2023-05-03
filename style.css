@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 28px 16px;
+    border-radius: 12px;
+    gap: 27px;
+    background-color: white;
+    
+}
+
+img{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+    padding-bottom: 24px;
+    gap: 16px;
+}
+
+.sub-heading{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.heading{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    
+}
+
+.para{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    line-height: 24px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.new-price{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%) ;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+.btn-cart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 0px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-cart:hover{
+    background-color:hsl(158, 56%, 17%); 
+}
+
+
+@media only screen and (min-width: 718px) {
+
+main{
+    max-height: 100vh;
+}
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        gap: 0px;
+        width: 600px;
+    }
+
+    img{
+        width: 300px;
+        height: 450px;
+        display: block;
+        border-radius: 12px 0px 0px 12px;
+    }
+    .card-info{
+        padding: 0px 32px;
+    }
+  
+  }
